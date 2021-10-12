@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=muktiTest01=()=>{console.log("Version 1.0.3")},t=muktiTest02=()=>{e(),console.log("Mukti test 2 & user 1@1.0.0")};document.body.appendChild(function(){const n=document.createElement("div");return n.innerHTML="Hello Mukti",e(),t(),n}())})();
