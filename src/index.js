@@ -1,21 +1,25 @@
 /*
  * @Author: Mukti
- * @Date: 2021-07-05 14:35:01
- * @LastEditTime: 2021-07-05 15:15:49
+ * @Date: 2021-10-22 14:41:07
+ * @LastEditTime: 2021-10-22 15:48:45
  * @LastEditors: Mukti
-*/
-import muktiTest01 from 'mukti-test-01';
-import muktiTest02 from 'mukti-test-02';
+ */
+import _ from 'lodash';
+import './style.css';
+import print from './print.js';
+// import icon from './avatar-default.jpg';
 
 function component() {
   const element = document.createElement('div');
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  element.classList.add('hello');
 
-  // lodash（目前通过一个 script 引入）对于执行这一行是必需的
-  element.innerHTML = 'Hello Mukti';
-  muktiTest01();
-  muktiTest02();
+  // const myIcon = new Image();
+  // myIcon.src = icon;
+  // element.appendChild(myIcon);
+
+  print();
 
   return element;
 }
-
 document.body.appendChild(component());
